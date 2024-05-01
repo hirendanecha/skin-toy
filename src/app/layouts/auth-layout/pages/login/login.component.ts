@@ -70,7 +70,7 @@ export class LoginComponent implements OnInit, AfterViewInit {
       title: 'Skin toy login',
       url: `${environment.webUrl}login`,
       description: 'login page',
-      image: `${environment.webUrl}assets/images/landingpage/Healing-Tube-Logo.png`,
+      image: `${environment.webUrl}assets/images/banner/cover.png`,
     };
     this.theme = localStorage.getItem('theme');
     // this.seoService.updateSeoMetaData(data);
