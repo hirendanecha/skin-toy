@@ -86,7 +86,7 @@ export function app(): express.Express {
         var seo: any = {
           title: 'Skin toy',
           description:
-            'Find like minded male or female unvaccinated organic humans!',
+            'Live Demos! Talk One-on-One Face-to-Face',
           image:
             'https://www.organic.dating/assets/images/banner/skin.png',
           site: 'https://www.organic.dating/',
