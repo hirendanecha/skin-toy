@@ -32,7 +32,7 @@ export class HealthPraatitionerCardComponent {
       this.router.navigate(['pages', this.community?.slug]);
     } else {
       if (this.community?.isApprove === 'Y') {
-        this.router.navigate(['shop-toys ']);
+        this.router.navigate(['shop-toys']);
       } else {
         this.toastService.danger('This toy shop is not approve yet.');
       }
