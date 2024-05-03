@@ -12,7 +12,7 @@ export class ConnectionsComponent implements OnInit {
     private seoService:SeoService
   ) {
     const data = {
-      title: 'Skin toy Connections',
+      title: 'Skin toy Shop',
       url: `${location.href}`,
       description: '',
     };

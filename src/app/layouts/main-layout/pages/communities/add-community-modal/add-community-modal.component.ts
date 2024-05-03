@@ -25,7 +25,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./add-community-modal.component.scss'],
 })
 export class AddCommunityModalComponent implements OnInit, AfterViewInit {
-  @Input() title: string | undefined = 'Apply to be Connection';
+  @Input() title: string | undefined = 'Apply for shop';
   @Input() cancelButtonLabel: string | undefined = 'Cancel';
   @Input() confirmButtonLabel: string | undefined = 'Create';
   @Input() closeIcon: boolean | undefined;
@@ -182,10 +182,10 @@ export class AddCommunityModalComponent implements OnInit, AfterViewInit {
               this.submitted = true;
               this.createCommunityAdmin(res.data);
               this.toastService.success(
-                'Your Connection will be approved within 24 hours!'
+                'Your Shop will be approved within 24 hours!'
               );
               this.activeModal.close('success');
-              this.router.navigate(['/health-practitioner']);
+              this.router.navigate(['/shop-toys']);
             }
           },
           error: (err) => {
@@ -210,14 +210,14 @@ export class AddCommunityModalComponent implements OnInit, AfterViewInit {
               this.submitted = true;
               // this.createCommunityAdmin(res.data);
               this.toastService.success(
-                'Your Connection edit successfully!'
+                'Your Shop edit successfully!'
               );
               this.activeModal.close('success');
             }
           },
           error: (err) => {
             this.toastService.danger(
-              'Please change Connection. this Connection  name already in use.'
+              'Please change Shop. this shop  name already in use.'
             );
             this.spinner.hide();
           },

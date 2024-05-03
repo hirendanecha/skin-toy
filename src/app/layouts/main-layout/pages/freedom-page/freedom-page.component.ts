@@ -29,7 +29,7 @@ export class FreedomPageComponent {
 
     this.getPages();
     const data = {
-      title: 'Skin toy Promote You!',
+      title: 'Skin toy Toys in Action!',
       url: `${location.href}`,
       description: '',
     };

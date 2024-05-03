@@ -88,14 +88,14 @@ export function app(): express.Express {
           description:
             'Live Demos! Talk One-on-One Face-to-Face',
           image:
-            'https://www.organic.dating/assets/images/banner/skin.png',
-          site: 'https://www.organic.dating/',
-          url: 'https://www.organic.dating' + params,
+            'https://www.skin.toys/assets/images/banner/skin.png',
+          site: 'https://www.skin.toys/',
+          url: 'https://www.skin.toys' + params,
           keywords: 'Skin toy',
         };
         if (
-          params.indexOf('connection/') > -1 ||
-          params.indexOf('promote-you/') > -1
+          params.indexOf('shop-toys/') > -1 ||
+          params.indexOf('toys-in-action/') > -1
         ) {
           let id = params.split('/');
           id = id[id.length - 1];
@@ -160,7 +160,7 @@ export function app(): express.Express {
               post?.thumbfilename ||
               post?.metaimage ||
               post?.imageUrl ||
-              'https://www.organic.dating/assets/images/banner/skin.png',
+              'https://www.skin.toys/assets/images/banner/skin.png',
           };
           seo.title = talent.name;
           seo.description = strip_html_tags(talent.description);

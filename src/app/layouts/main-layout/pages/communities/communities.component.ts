@@ -37,7 +37,7 @@ export class CommunitiesComponent {
     }
     // this.getCommunities();
     const data = {
-      title: 'Skin toy Connection',
+      title: 'Skin toy shop',
       url: `${window.location.href}`,
       description: '',
     };
@@ -95,7 +95,7 @@ export class CommunitiesComponent {
 
 
   createCommunity() {
-    this.router.navigate(['connection/add-connection'])
+    this.router.navigate(['shop-toys/add-toy-shop'])
   }
   // createCommunity() {
   //   const modalRef = this.modalService.open(AddCommunityModalComponent, {
