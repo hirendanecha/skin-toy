@@ -13,6 +13,6 @@ export const environment = {
   webUrl: webUrl,
   tubeUrl: tubeUrl,
   domain: '.skin.toys',
-  siteKey: '0x4AAAAAAATU1CBk_lvwGxIy',
-  secretKey: '0x4AAAAAAATU1GanFiWSflL_7a_cnZt_SKM',
+  siteKey: '0x4AAAAAAAZb0V1ViJGZlVqs',
+  secretKey: '0x4AAAAAAAZb0T4LJc7WTV4abAMocWRXQMU',
 };
