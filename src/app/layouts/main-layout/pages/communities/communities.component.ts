@@ -37,7 +37,7 @@ export class CommunitiesComponent {
     }
     // this.getCommunities();
     const data = {
-      title: 'Skin toy shop',
+      title: 'Skin.toys shop',
       url: `${window.location.href}`,
       description: '',
     };

@@ -67,7 +67,7 @@ export class LoginComponent implements OnInit, AfterViewInit {
       this.type = 'success';
     }
     const data = {
-      title: 'Skin toy login',
+      title: 'Skin.toys login',
       url: `${environment.webUrl}login`,
       description: 'login page',
       image: `${environment.webUrl}assets/images/banner/cover.png`,

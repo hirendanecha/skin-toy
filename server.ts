@@ -84,14 +84,14 @@ export function app(): express.Express {
         }
         const params = req.params[0];
         var seo: any = {
-          title: 'Skin toy',
+          title: 'Skin.toys',
           description:
             'Live Demos! Talk One-on-One Face-to-Face',
           image:
             'https://www.skin.toys/assets/images/banner/skin.png',
           site: 'https://www.skin.toys/',
           url: 'https://www.skin.toys' + params,
-          keywords: 'Skin toy',
+          keywords: 'Skin.toys',
         };
         if (
           params.indexOf('shop-toys/') > -1 ||
@@ -132,7 +132,7 @@ export function app(): express.Express {
           console.log({ params }, { id }, { profile: JSON.stringify(profile) });
           const talent = {
             name: profile[0]?.userName,
-            description: 'Skin toy',
+            description: 'Skin.toys',
             image: profile?.[0]?.profilePictures?.[0]?.imageUrl,
           };
           // description: profile[0]?.FirstName + ' ' + profile[0]?.LastName,
@@ -175,7 +175,7 @@ export function app(): express.Express {
 
           console.log('group===>', group);
           const talent = {
-            name: `Skin toy Research ${group?.PageTitle}`,
+            name: `Skin.toys Research ${group?.PageTitle}`,
             description: group?.PageDescription,
             image: group?.CoverPicName || group?.ProfilePicName,
           };

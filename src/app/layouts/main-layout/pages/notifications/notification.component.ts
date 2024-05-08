@@ -23,7 +23,7 @@ export class NotificationsComponent {
     private socketService: SocketService
   ) { 
     const data = {
-      title: 'Skin toy Notification',
+      title: 'Skin.toys Notification',
       url: `${window.location.href}`,
       description: '',
     };

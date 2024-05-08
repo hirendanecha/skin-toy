@@ -60,7 +60,7 @@ export class CarouselComponent implements OnInit {
     private seoService:SeoService
   ) {
     const data = {
-      title: 'Skin toy Carousel',
+      title: 'Skin.toys Carousel',
       url: `${location.href}`,
       description: '',
     };

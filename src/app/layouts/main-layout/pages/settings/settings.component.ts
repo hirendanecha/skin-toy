@@ -24,7 +24,7 @@ export class SettingsComponent {
     private seoService:SeoService
   ) {
     const data = {
-      title: 'Skin toy Settings',
+      title: 'Skin.toys Settings',
       url: `${location.href}`,
       description: '',
     };
