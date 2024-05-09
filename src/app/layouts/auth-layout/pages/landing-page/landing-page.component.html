@@ -27,9 +27,16 @@
       </button>
     </div>
   </nav>
-
+<div class="custom-mobile-height" *ngIf="isInnerWidthSmall && (isLogin || isRegister)" (click)="closeMenu()">
+  <div class="main-banner p-2 w-75 m-auto position-relative">
+    <span class="d-flex flex-column align-items-center">
+      <p class="text-black c-fonts mt-3 mb-0">Live Demos!</p>
+      <p class="text-black c-fonts mb-3">Talk One-on-One Face-to-Face</p>
+    </span>
+  </div>
+</div>
   <div (click)="closeMenu()">
-    <div class="d-flex flex-column py-10 custom-height">
+    <div class="d-flex flex-column py-10" [ngClass]="!isInnerWidthSmall || (!isLogin && !isRegister) ? 'custom-height' : ''">
       <div class="container">
         <div class="main-banner p-2 p-sm-4" *ngIf="!isLogin && !isRegister">
           <span class="d-flex flex-column align-items-center">
