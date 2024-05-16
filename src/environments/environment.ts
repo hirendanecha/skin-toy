@@ -15,4 +15,7 @@ export const environment = {
   domain: '.skin.toys',
   siteKey: '0x4AAAAAAAZb0V1ViJGZlVqs',
   secretKey: '0x4AAAAAAAZb0T4LJc7WTV4abAMocWRXQMU',
+  qrLink: `${webUrl}settings/edit-profile/`,
+  EncryptIV: 8625401029409790,
+  EncryptKey: 8625401029409790,
 };
