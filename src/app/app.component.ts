@@ -176,7 +176,7 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
               };
               if (!window.document.hidden) {
                 const callId = (data.link.includes('callId-') ? 'callId-' + data.link.split('-')[1] : 'callId-' + data.link.split('/').pop());
-                this.router.navigate([`/dating-call/${callId}`], {
+                this.router.navigate([`/skin-call/${callId}`], {
                   state: { chatDataPass },
                 });
                 // this.router.navigate([`/freedom-call/${data.link}`]);

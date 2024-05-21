@@ -137,7 +137,7 @@ const routes: Routes = [
         canActivate: mapToCanActivate([AuthenticationGuard]),
       },
       {
-        path: 'dating-call/:callId',
+        path: 'skin-call/:callId',
         component: AppointmentCallComponent,
         data: {
           isShowLeftSideBar: false,
