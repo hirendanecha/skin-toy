@@ -107,7 +107,7 @@ export class ProfileChatsListComponent
     this.profileId = +localStorage.getItem('profileId');
 
     const data = {
-      title: 'Organic-Chat',
+      title: 'Skin.toys-Chat',
       url: `${location.href}`,
       description: '',
     };
@@ -273,6 +273,7 @@ export class ProfileChatsListComponent
       {
         profileId1: this.profileId,
         profileId2: this.userChat?.Id || this.userChat?.profileId,
+        type: 'chat'
       },
       (data: any) => {
         // console.log(data);
@@ -948,7 +949,7 @@ export class ProfileChatsListComponent
         userName: this.groupData?.groupName || this.sharedService?.userData?.userName,
         actionType: "VC",
         notificationByProfileId: this.profileId,
-        link: `${this.webUrl}dating-call/${originUrl}`,
+        link: `${this.webUrl}skin-call/${originUrl}`,
         roomId: this.userChat?.roomId || null,
         groupId: this.userChat?.groupId || null,
         notificationDesc: this.groupData?.groupName ||this.sharedService?.userData?.userName + " incoming call...",

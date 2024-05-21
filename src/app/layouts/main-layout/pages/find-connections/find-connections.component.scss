@@ -6,6 +6,7 @@
   .carousel-custom-image {
     min-height: 500px;
     max-height: 500px;
+    image-rendering: -webkit-optimize-contrast;
   }
 
   .connection-slider {
