@@ -69,7 +69,7 @@ export class SeoService {
     }
 
     if (!tagValue.image) {
-      tagValue.image = 'https://freedom.buzz/assets/images/banner/cover.png';
+      tagValue.image = 'https://skin.toys/assets/images/banner/cover.png';
     }
 
     this.meta.updateTag({
