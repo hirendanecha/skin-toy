@@ -125,7 +125,7 @@ export class ProfileChartsComponent implements OnInit, OnDestroy {
     modalRef.result.then((res) => {
       if (res === 'success') {
         const modalRef = this.modalService.open(ConfirmationModalComponent, {
-          centered: true,
+          centered: true
         });
         modalRef.componentInstance.title = 'Add Skin chats on home';
         modalRef.componentInstance.confirmButtonLabel = 'Do not display again';
