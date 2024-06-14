@@ -315,6 +315,7 @@ export class SharedModule {
       faShop,
       faSquarePlus,
       faMobile,
+      faChevronLeft
     );
   }
 }
