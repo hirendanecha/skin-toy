@@ -10,6 +10,7 @@ import { SocketService } from '../../services/socket.service';
 import { Subscription } from 'rxjs';
 import { Router } from '@angular/router';
 import { SoundControlService } from '../../services/sound-control.service';
+import { SharedService } from '../../services/shared.service';
 
 @Component({
   selector: 'app-outgoing-call-modal',
@@ -33,17 +34,26 @@ export class OutGoingCallModalComponent
     private socketService: SocketService,
     private soundControlService: SoundControlService,
     private router: Router,
+    private sharedService: SharedService
   ) {}
 
   ngAfterViewInit(): void {
-    const SoundOct = JSON.parse(
-      localStorage.getItem('soundPreferences')
-    )?.callSoundEnabled;
-    if (SoundOct !== 'N') {
-      if (this.sound) {
-        this.sound?.play();
+    // const SoundOct = JSON.parse(
+    //   localStorage.getItem('soundPreferences')
+    // )?.callSoundEnabled;
+    // if (SoundOct !== 'N') {
+    //   if (this.sound) {
+    //     this.sound?.play();
+    //   }
+    // }
+    this.sharedService.loginUserInfo.subscribe((user) => {
+      const callNotificationSound = user.callNotificationSound;
+      if (callNotificationSound === 'Y') {
+        if (this.sound) {
+          this.sound?.play();
+        }
       }
-    }
+    });
     if (window.document.hidden) {
       this.soundEnabledSubscription =
         this.soundControlService.soundEnabled$.subscribe((soundEnabled) => {
@@ -73,7 +83,7 @@ export class OutGoingCallModalComponent
       if (data?.actionType === 'SC') {
         this.sound?.stop();
       }
-    })
+    });
   }
 
   pickUpCall(): void {
@@ -82,7 +92,7 @@ export class OutGoingCallModalComponent
     // this.router.navigate([`/appointment-call/${this.calldata.link}`]);
     const callId = this.calldata.link.replace('https://facetime.tube/', '');
     this.router.navigate([`/skin-call/${callId}`]);
-    // window.open(this.calldata.link, '_blank');    
+    // window.open(this.calldata.link, '_blank');
     this.activateModal.close('success');
   }
 
